@@ -462,32 +462,42 @@ footer{
 @media(max-width:640px){
 
 .hero{
-  padding:64px 16px 48px;
+  padding:56px 16px 42px;
+}
+
+.eyebrow{
+  margin-bottom:10px;
 }
 
 .hero h1{
-  font-size:clamp(2rem,9vw,3rem);
-  line-height:1.08;
+  font-size:clamp(1.8rem,8vw,2.7rem);
+  line-height:1.05;
 }
 
 .hero-copy{
-  font-size:.95rem;
-  line-height:1.65;
-  margin-top:14px;
+  font-size:.92rem;
+  line-height:1.55;
+  margin-top:12px;
+  max-width:32ch;
 }
 
 .hero-buttons{
-  margin-top:22px;
+  margin-top:18px;
+}
+
+.btn-primary,
+.btn-secondary{
+  padding:10px 16px;
 }
 
 .hero-points{
   gap:8px;
-  margin-top:20px;
+  margin-top:16px;
 }
 
 .hero-points li{
   padding:6px 10px;
-  font-size:.82rem;
+  font-size:.8rem;
 }
 
 .section-intro{
