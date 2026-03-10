@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TeezLabs Web Packages</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <div class="site-frame">
+    <header class="hero">
+      <div class="grid-bg" aria-hidden="true"></div>
+
+      <div class="container">
+        <p class="eyebrow">TEEZLABS // WEB PACKAGES</p>
+
+        <h1>Website Packages</h1>
+
+        <p>
+          Clean, mobile-friendly websites for small businesses,
+          portfolios, and personal brands.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#packages" class="btn-primary">View Packages</a>
+          <a href="#contact" class="btn-secondary">Get a Website</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="packages" class="packages">
+        <div class="card">
+          <h2>Starter Website</h2>
+
+          <p class="price">$250 – $500</p>
+
+          <ul>
+            <li>1–3 pages</li>
+            <li>Mobile-friendly design</li>
+            <li>Contact form</li>
+            <li>Domain + hosting setup</li>
+            <li>Basic SEO setup</li>
+          </ul>
+
+          <p class="turnaround">Typical turnaround: <span>1–2 weeks</span></p>
+        </div>
+
+        <div class="card">
+          <h2>Business Website</h2>
+
+          <p class="price">$500 – $1000</p>
+
+          <ul>
+            <li>4–6 pages</li>
+            <li>Mobile-friendly design</li>
+            <li>Contact form</li>
+            <li>Blog or news section</li>
+            <li>Analytics setup</li>
+          </ul>
+
+          <p class="turnaround">Typical turnaround: <span>2–3 weeks</span></p>
+        </div>
+      </section>
+
+      <section class="maintenance">
+        <h2 class="section-title">Website Maintenance</h2>
+
+        <div class="maintenance-grid">
+          <div class="card">
+            <h3>Basic Care</h3>
+
+            <p class="price">$25 / month</p>
+
+            <ul>
+              <li>Site backups</li>
+              <li>Security updates</li>
+              <li>Hosting monitoring</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Standard Care</h3>
+
+            <p class="price">$75 / month</p>
+
+            <ul>
+              <li>Everything in Basic</li>
+              <li>Content updates</li>
+              <li>Monthly analytics report</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card addons">
+        <h2>Add-Ons</h2>
+
+        <ul class="addon-list">
+          <li><span>Extra Page</span><span>$75</span></li>
+          <li><span>Blog Setup</span><span>$100</span></li>
+          <li><span>Logo Design</span><span>$50</span></li>
+          <li><span>Personal Email</span><span>$60</span></li>
+          <li><span>Domain Setup</span><span>$40</span></li>
+          <li><span>Urgent Changes</span><span>$25</span></li>
+        </ul>
+      </section>
+
+      <section class="card process">
+        <h2>How It Works</h2>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Consultation</h3>
+            <p>We talk through what you need and what pages your site requires.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Design & Build</h3>
+            <p>I create a clean static site that works on desktop and mobile.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Review & Edits</h3>
+            <p>You review the site and request any final changes.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Launch</h3>
+            <p>The website goes live and maintenance can be provided if needed.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <p><span class="prompt">$</span> <span class="typing typing-1">start-project</span></p>
+          <p><span class="prompt">&gt;</span> Tell me your business name, pages you need, and the vibe you want.</p>
+          <p><span class="prompt">$</span> <span class="typing typing-2">awaiting-message...</span></p>
+
+          <a class="email-btn" href="mailto:your@email.com">Email Me</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Simple static website — fast, clean, reliable.</p>
+    </footer>
+  </div>
+
+  <script>
+    const glow = document.getElementById("cursorGlow");
+
+    window.addEventListener("mousemove", (event) => {
+      glow.style.left = event.clientX + "px";
+      glow.style.top = event.clientY + "px";
+    });
+
+    window.addEventListener("mousedown", () => {
+      glow.classList.add("active");
+    });
+
+    window.addEventListener("mouseup", () => {
+      glow.classList.remove("active");
+    });
+  </script>
+</body>
+
+</html>
